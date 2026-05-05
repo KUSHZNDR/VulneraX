@@ -26,12 +26,12 @@ Please read our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before participating.
 
 You can contribute by:
 
-- 🐛 **Reporting bugs** — open a GitHub Issue with steps to reproduce
-- ✨ **Requesting features** — open an Issue with the `enhancement` label
-- 🔌 **Submitting plugins** — new scanner integrations are highly welcome
-- 📖 **Improving docs** — fix typos, add examples, improve clarity
-- 🧪 **Adding tests** — unit tests for parsers and engines especially
-- 🌐 **Translations** — help us localise the documentation
+- 🐛 **Reporting bugs** - open a GitHub Issue with steps to reproduce
+- ✨ **Requesting features** - open an Issue with the `enhancement` label
+- 🔌 **Submitting plugins** - new scanner integrations are highly welcome
+- 📖 **Improving docs** - fix typos, add examples, improve clarity
+- 🧪 **Adding tests** - unit tests for parsers and engines especially
+- 🌐 **Translations** - help us localise the documentation
 
 ---
 
@@ -94,19 +94,19 @@ python main.py deps
 | `reports/` | HTML / JSON / CSV report generators |
 | `gui/` | CustomTkinter panels and app window |
 | `api/` | FastAPI server and route definitions |
-| `utils/` | Shared utilities — schema, logger, config, etc. |
+| `utils/` | Shared utilities - schema, logger, config, etc. |
 
 ---
 
 ## Code Standards
 
-- **Python 3.10+** — use type hints everywhere
-- **Docstrings** — every public class and method needs a docstring
-- **No hardcoding** — all paths, ports, and timeouts go in `config.yaml`
-- **No silent failures** — log warnings or raise informative exceptions
-- **Line length** — max 100 characters
-- **Imports** — stdlib → third-party → local, each group alphabetically sorted
-- **Naming** — `snake_case` for variables/functions, `PascalCase` for classes
+- **Python 3.10+** - use type hints everywhere
+- **Docstrings** - every public class and method needs a docstring
+- **No hardcoding** - all paths, ports, and timeouts go in `config.yaml`
+- **No silent failures** - log warnings or raise informative exceptions
+- **Line length** - max 100 characters
+- **Imports** - stdlib → third-party → local, each group alphabetically sorted
+- **Naming** - `snake_case` for variables/functions, `PascalCase` for classes
 
 Run a quick sanity check before submitting:
 
@@ -153,14 +153,14 @@ class YourScanner(PluginBase):
         return findings
 ```
 
-3. Drop the file into `plugins/` — VulneraX will auto-discover it on next run.
+3. Drop the file into `plugins/` - VulneraX will auto-discover it on next run.
 4. Use `python main.py plugins` to verify it's loaded.
 
 ### Plugin guidelines
 
 - Handle `FileNotFoundError` for missing binaries (the base class will catch and log it)
 - Call `self._emit(message, percent)` to update the GUI progress bar
-- Return an empty list `[]` when nothing is found — never `None`
+- Return an empty list `[]` when nothing is found - never `None`
 - Use `self.log.warning(...)` for non-fatal issues
 
 ---
