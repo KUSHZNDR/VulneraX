@@ -68,4 +68,4 @@ See `plugins/example_plugin.py` for a fully working example.
 ## 🤝 Open Source
 This project is fully Open Source. Feel free to fork, modify, and submit Pull Requests!
 
-Coded by: **KUxh**
+
