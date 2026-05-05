@@ -12,14 +12,14 @@
 
 ## 🎯 What is this?
 
-This is a production-ready, **open-source** cybersecurity framework built for everyone—from beginners to advanced penetration testers. It requires **zero setup** to run its base scans!
+This is a production-ready, **open-source** cybersecurity framework built for everyone from beginners to advanced penetration testers. It requires **zero setup** to run its base scans!
 
 - Takes a **single input** (URL, IP, or domain) and performs a fully automated scan.
 - Includes **Native Python Scanners** (Port scanner, Web Misconfiguration scanner, Header Security scanner) that run instantly with no external installations required.
 - Capable of orchestrating **Nmap, OWASP ZAP, Nuclei, and Nikto** in parallel for advanced users.
 - **Correlates findings** to remove duplicates and false positives.
 - Generates **professional, cyberpunk-themed HTML reports** instantly.
-- Supports a **dynamic plugin system** — add your own Python scanners in minutes!
+- Supports a **dynamic plugin system**   add your own Python scanners in minutes!
 
 ---
 
